@@ -61,6 +61,9 @@ app.use("/api/renter", rentedInfoRoute);
 app.get("/", (req, res) => {
   return res.status(200).send("<h1>Welcome to node FlexShare</h1>");
 });
+app.get("/test", (req, res) => {
+  return res.status(200).send("<h1>Welcome to node FlexShare test</h1>");
+});
 const userSocketMap = {};
 export const getReceiverSocketId = (receiverId) => {
   return userSocketMap[receiverId];
