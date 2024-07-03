@@ -59,7 +59,7 @@ app.use("/api/messages", messagesRoutes);
 app.use("/api/renter", rentedInfoRoute);
 
 app.get("/", (req, res) => {
- return res.send("Hello World!");
+  return res.status(200).send("<h1>Welcome to node FlexShare</h1>");
 });
 const userSocketMap = {};
 export const getReceiverSocketId = (receiverId) => {
