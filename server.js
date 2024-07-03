@@ -113,5 +113,5 @@ io.on("connection", (socket) => {
 
 const PORT = process.env.PORT || 8080;
 httpServer.listen(PORT, () => {
-  console.log(`HTTP Server running on port ${PORT}`.bgMagenta.white);
+  console.log(`HTTP Server running on port ${PORT}`);
 });
