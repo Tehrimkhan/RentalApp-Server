@@ -5,7 +5,7 @@ import cors from "cors";
 import { config } from "dotenv";
 import cookieParser from "cookie-parser";
 import cloudinary from "cloudinary";
-//import Stripe from "stripe";
+import Stripe from "stripe";
 
 import connectDB from "./config/db.js";
 import { createServer } from "http";
@@ -18,7 +18,7 @@ config();
 connectDB();
 
 //STRIPE CONFIG
-//export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 //CLOUDINARY CONFIG
 cloudinary.v2.config({
