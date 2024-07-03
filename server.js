@@ -59,7 +59,7 @@ app.use("/api/messages", messagesRoutes);
 app.use("/api/renter", rentedInfoRoute);
 
 app.get("/", (req, res) => {
- res.send("Hello World!");
+ return res.send("Hello World!");
 });
 const userSocketMap = {};
 export const getReceiverSocketId = (receiverId) => {
